@@ -39,7 +39,7 @@ header{
 
 .nav-link{
     color: black;
-}
+} 
 
 .container-fl{
     display: flex;
@@ -73,7 +73,6 @@ header{
     font-family: 'Anton', sans-serif;
     margin-top: 75px;
     font-size: 100px;
-
 }
 
 li:hover{
@@ -90,8 +89,8 @@ footer{
     padding: 45px;
 }
 
-.itemTextos{
-    color: black;
+.itemTextosFooter{
+    color: white;
 }
 
 .itemSponsors{
@@ -122,7 +121,7 @@ footer{
     to {-webkit-transform: rotate(360deg);}}
 
     .tituloIndex{
-        font-size: 44px;
+        font-size: 60px;
         font-weight: 10px;
         font-family: 'Times New Roman', Times, serif;
     
@@ -143,22 +142,6 @@ footer{
         width: 250px;
         height: 250px;
     }
-
-    /* .contenedorGlobal{
-        width: 73%;
-    }
-
-    header{
-        width: 73%;
-    }
-
-    footer{
-        width: 73%;
-    }
-
-    .container-fl{
-        width: 73%;
-    } */
 }
 
 /* HTML HISTORIA */
@@ -253,6 +236,12 @@ footer{
 }
 
 @media (max-width: 480px) {
+    .mainHistoria{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .contenedorGlobal{
         width: 100%;
     }
@@ -349,3 +338,193 @@ footer{
 
 /* HTML HACETE SOCIO */
 
+.mainHaceteSocio p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.preguntaSocio{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.textoSocio{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.imagenCarnetSocio{
+    padding: 40px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.imagenCarnetSocio img{
+    width: 300px;
+    height: 200px;
+}
+
+.carnetNormal:hover{
+    transform: scale(1.3);
+    transition-property: all;
+    transition-duration: 5s;
+}
+
+.carnetVitalicio:hover{
+    transform: scale(1.3);
+    transition-property: all;
+    transition-duration: 5s;
+}
+
+.porqueSocio{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.comoMeHagoSocio{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 480px) {
+
+    .mainHaceteSocio p{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+    }
+
+    .preguntaSocio{
+        margin-top: 40px;
+    }
+
+    .imagenCarnetSocio{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .imagenCarnetSocio img{
+        width: 300px;
+        height: 200px;
+    }
+
+    .carnetNormal:hover{
+        transform: scale(1.2);
+        transition-duration: 3s;
+    }
+    
+    .carnetVitalicio:hover{
+        transform: scale(1.2);
+        transition-duration: 3s;
+    }
+}
+
+/* HTML ESTADIO */
+
+.tituloEstadio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.tituloEstadio h1{
+    padding: 55px;
+    text-decoration: underline;
+}
+
+.containerEstadios p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 25px;
+}
+
+.estadios{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.estadios img{
+    width: 430px;
+    height: 430px;
+}
+
+.estadiosAntiguoYmoderno{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.estadiosAntiguoYmoderno:hover{
+    transform: scale(1.2);
+    transition-duration: 3s;
+}
+
+.textoEstadios{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 480px) {
+
+    .tituloEstadio img{
+        width: 430px;
+        height: 430px;
+    }
+
+    .containerEstadios p{
+        font-size: 20px;
+    }
+
+    .estadios{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        padding: 15px;
+    }
+
+    .itemTextosFooter{
+        font-size: 25px;
+    }
+
+}
+
+/* HTML TROFEOS */
+
+.containerTrofeos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.sectionTrofeos{
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 20px solid black;
+}
+
+.sectionTrofeos img{
+    width: 200px;
+    height: 250px;
+}
+
+.trofeos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px;
+}
+
+.divImg{
+    padding: 15px;
+}

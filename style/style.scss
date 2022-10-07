@@ -1,0 +1,119 @@
+@import url(_operaciones.scss);
+
+//html INDEX
+header{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: $blue;
+    padding: 40px;
+
+    .nav-link{
+        color: black;
+    }
+}
+
+.container-fl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .tituloIndex{
+        font-family: 'Anton', sans-serif;
+        margin-top: 75px;
+        font-size: 100px;
+    }
+
+    .row{
+        margin-top: 120px;
+        margin-bottom: 256px;
+
+        img{
+            width: 500px;
+            height: 500px;
+        }
+
+        .lineaCeleste{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .lineaCeleste:hover{
+            transform: scale(1.20);
+            transition-property: all;
+            transition-duration: 6s;
+        }
+    }
+
+    li:hover{
+        transform: scale(1.02);
+        transition-property: all;
+        transition-duration: 5s;
+    }
+} 
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: $blue;
+    padding: 45px;
+
+    .itemTextos{
+        color: black;
+    }
+
+    .itemSponsors{
+        margin-top: 25px;
+
+        img{
+            width: 90px;
+            padding: 5px;    
+        }
+    }
+    
+    .itemRedes{
+        margin-top: 25px;
+
+        img{
+            width: 70px;
+            padding: 5px;
+        }
+    } 
+}
+
+@media (max-width: 480px) {
+ 
+    @keyframes rotate {from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}}
+
+    @-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}}
+
+    .tituloIndex{
+        font-size: 44px;
+        font-weight: 10px;
+        font-family: 'Times New Roman', Times, serif;
+    
+    }
+
+    .row{
+        .lineaCeleste{
+            -webkit-animation: 3s rotate linear;
+            animation: 3s rotate linear;
+            -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+        }
+
+        img{
+            width: 150px;
+            height: 150px;
+        }
+
+        .carousel-inner img{
+            width: 250px;
+            height: 250px;
+        }
+    }
+
+}
