@@ -1,0 +1,474 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(18, 29, 51);
+  padding: 40px;
+}
+header .container-fluid a {
+  color: white;
+}
+header .nav-link {
+  color: black;
+}
+header .escudo {
+  width: 58px;
+}
+header .escudoRacing:hover {
+  transform: scale(1.2);
+  transition-property: all;
+  transition-duration: 6s;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(18, 29, 51);
+  padding: 45px;
+}
+footer .itemTextosFooter {
+  color: white;
+}
+footer .itemSponsors {
+  margin-top: 25px;
+}
+footer .itemSponsors img {
+  width: 90px;
+  padding: 5px;
+}
+footer .itemRedes {
+  margin-top: 25px;
+}
+footer .itemRedes img {
+  width: 70px;
+  padding: 5px;
+}
+
+.container-fl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-fl .tituloIndex {
+  font-family: "Anton", sans-serif;
+  margin-top: 75px;
+  font-size: 100px;
+}
+.container-fl .row {
+  margin-top: 120px;
+  margin-bottom: 256px;
+}
+.container-fl .row img {
+  width: 320px;
+  height: 320px;
+}
+.container-fl .row .lineaCeleste {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.container-fl .row .lineaCeleste:hover {
+  transform: scale(1.2);
+  transition-property: all;
+  transition-duration: 6s;
+}
+.container-fl li:hover {
+  transform: scale(1.02);
+  transition-property: all;
+  transition-duration: 5s;
+}
+
+@media (max-width: 480px) {
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes rotate {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  .tituloIndex {
+    font-size: 44px;
+    font-weight: 10px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .row .lineaCeleste {
+    -webkit-animation: 3s rotate linear;
+    animation: 3s rotate linear;
+    transform-origin: 50% 50%;
+  }
+  .row img {
+    width: 150px;
+    height: 150px;
+  }
+  .row .carousel-inner img {
+    width: 250px;
+    height: 250px;
+  }
+}
+.containerEstadios p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 25px;
+}
+.containerEstadios .tituloEstadio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+.containerEstadios .tituloEstadio h1 {
+  padding: 55px;
+  text-decoration: underline;
+}
+.containerEstadios .estadios {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+}
+.containerEstadios .estadios img {
+  width: 430px;
+  height: 430px;
+}
+.containerEstadios .estadios .estadiosAntiguoYmoderno {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.containerEstadios .estadios .estadiosAntiguoYmoderno:hover {
+  transform: scale(1.2);
+  transition-duration: 3s;
+}
+.containerEstadios .textoEstadios {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 480px) {
+  .containerEstadios p {
+    font-size: 20px;
+  }
+  .containerEstadios .tituloEstadio img {
+    width: 430px;
+    height: 430px;
+  }
+  .containerEstadios .estadios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+  }
+  .containerEstadios .itemTextosFooter {
+    font-size: 25px;
+  }
+}
+.containerTrofeos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.containerTrofeos .sectionTrofeos {
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.containerTrofeos .sectionTrofeos img {
+  width: 200px;
+  height: 250px;
+}
+.containerTrofeos .trofeos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 50px;
+  border: 10px solid black;
+}
+.containerTrofeos .containerTrofeos p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 20px;
+}
+.containerTrofeos .containerTrofeos h1 {
+  text-decoration: underline;
+  padding: 20px;
+}
+.containerTrofeos .divImg {
+  padding: 15px;
+}
+.containerTrofeos .divImg:hover {
+  transform: scale(1.2);
+  transition-duration: 3s;
+}
+
+@media (max-width: 480px) {
+  .containerTrofeos {
+    padding: 40px;
+  }
+  .containerTrofeos .sectionTextoTrofeos {
+    padding: 15px;
+  }
+  .containerTrofeos .sectionTrofeos {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .containerTrofeos .sectionTrofeos img {
+    width: 150px;
+    height: 200px;
+  }
+  .containerTrofeos .sectionTextoTrofeos {
+    font-weight: 10px;
+  }
+}
+.contenedorGlobal .mainHistoria .containerHistoria {
+  display: grid;
+  grid-template-columns: 950px;
+  grid-template-rows: repeat(7, 450px);
+  grid-template-areas: "tituloHistoria" "lisandro" "milito" "pizzuti" "lautaro" "cardenas" "mostaza";
+  justify-content: center;
+}
+.contenedorGlobal .mainHistoria .containerHistoria .sectionTitulo {
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 55px;
+}
+.contenedorGlobal .mainHistoria .containerHistoria .sectionTitulo .itemTituloHistoria {
+  grid-area: tituloHistoria;
+  font-size: 53px;
+  text-decoration: underline;
+}
+.contenedorGlobal .mainHistoria .containerHistoria .sectionTitulo .introduccionHistoria {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+}
+.contenedorGlobal .mainHistoria .containerHistoria .sectionFotos .itemLisandro {
+  grid-area: lisandro;
+  margin-bottom: 46px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+.contenedorGlobal .mainHistoria .containerHistoria .sectionFotos .itemMilito {
+  grid-area: milito;
+  margin-bottom: 46px;
+  display: flex;
+  flex-direction: row;
+}
+.contenedorGlobal .mainHistoria .containerHistoria .sectionFotos .itemPizzuti {
+  grid-area: pizzuti;
+  margin-bottom: 46px;
+  display: flex;
+  flex-direction: row;
+}
+.contenedorGlobal .mainHistoria .containerHistoria .sectionFotos .itemLautaro {
+  grid-area: lautaro;
+  margin-bottom: 46px;
+  display: flex;
+  flex-direction: row;
+}
+.contenedorGlobal .mainHistoria .containerHistoria .sectionFotos .itemCardenas {
+  grid-area: cardenas;
+  margin-bottom: 46px;
+  display: flex;
+  flex-direction: row;
+}
+.contenedorGlobal .mainHistoria .containerHistoria .sectionFotos .itemMostaza {
+  grid-area: mostaza;
+  margin-bottom: 46px;
+  display: flex;
+  flex-direction: row;
+}
+.contenedorGlobal .mainHistoria .containerHistoria .sectionFotos .nombreJugador {
+  text-align: center;
+  margin-top: 50px;
+}
+.contenedorGlobal .mainHistoria .containerHistoria .sectionFotos .textosHistoria {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 47px;
+  padding: 10px;
+}
+.contenedorGlobal .mainHistoria .containerHistoria .sectionFotos .fotosIdolos:hover {
+  transform: scale(1.15);
+  transition-property: all;
+  transition-duration: 4s;
+}
+.contenedorGlobal .mainHistoria .containerHistoria .sectionFotos .fotosIdolos .imgHistoria {
+  width: 400px;
+  height: 400px;
+}
+
+@media (max-width: 480px) {
+  .contenedorGlobal {
+    width: 100%;
+  }
+  .contenedorGlobal .mainHistoria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenedorGlobal .mainHistoria .containerHistoria {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedorGlobal .mainHistoria .containerHistoria .sectionTitulo {
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 55px;
+    padding: 15px;
+  }
+  .contenedorGlobal .mainHistoria .containerHistoria .sectionFotos .nombreJugador {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 28px;
+    text-decoration: underline;
+  }
+  .contenedorGlobal .mainHistoria .containerHistoria .sectionFotos .fotosIdolos {
+    display: flex;
+    justify-content: center;
+  }
+  .contenedorGlobal .mainHistoria .containerHistoria .sectionFotos .fotosIdolos:hover {
+    transform: scale(1.15);
+    transition-property: all;
+    transition-duration: 2s;
+  }
+  .contenedorGlobal .mainHistoria .containerHistoria .sectionFotos .itemLisandro {
+    margin-bottom: 46px;
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedorGlobal .mainHistoria .containerHistoria .sectionFotos .itemMilito {
+    margin-bottom: 46px;
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedorGlobal .mainHistoria .containerHistoria .sectionFotos .itemPizzuti {
+    margin-bottom: 46px;
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedorGlobal .mainHistoria .containerHistoria .sectionFotos .itemLautaro {
+    margin-bottom: 46px;
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedorGlobal .mainHistoria .containerHistoria .sectionFotos .itemCardenas {
+    margin-bottom: 46px;
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedorGlobal .mainHistoria .containerHistoria .sectionFotos .itemMostaza {
+    margin-bottom: 46px;
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedorGlobal .mainHistoria .containerHistoria .sectionFotos .nombreJugador {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .contenedorGlobal .mainHistoria .containerHistoria .sectionFotos .textosHistoria {
+    text-align: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin-top: 47px;
+    font-size: 20px;
+  }
+  .contenedorGlobal .mainHistoria .containerHistoria .sectionFotos .imgHistoria {
+    width: 250px;
+    height: 250px;
+  }
+  .contenedorGlobal .itemSponsors img {
+    padding: 14px;
+  }
+}
+.mainHaceteSocio p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.mainHaceteSocio .preguntaSocio {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.mainHaceteSocio .textoSocio {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.mainHaceteSocio .imagenCarnetSocio {
+  padding: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.mainHaceteSocio .imagenCarnetSocio img {
+  width: 300px;
+  height: 200px;
+}
+.mainHaceteSocio .imagenCarnetSocio .carnetNormal:hover {
+  transform: scale(1.3);
+  transition-property: all;
+  transition-duration: 5s;
+}
+.mainHaceteSocio .imagenCarnetSocio .carnetVitalicio:hover {
+  transform: scale(1.3);
+  transition-property: all;
+  transition-duration: 5s;
+}
+.mainHaceteSocio .porqueSocio {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.mainHaceteSocio .comoMeHagoSocio {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 480px) {
+  .mainHaceteSocio p {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 20px;
+  }
+  .mainHaceteSocio .preguntaSocio {
+    margin-top: 40px;
+  }
+  .mainHaceteSocio .imagenCarnetSocio {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .mainHaceteSocio .imagenCarnetSocio img {
+    width: 300px;
+    height: 200px;
+  }
+  .mainHaceteSocio .carnetNormal:hover {
+    transform: scale(1.2);
+    transition-duration: 3s;
+  }
+  .mainHaceteSocio .carnetVitalicio:hover {
+    transform: scale(1.2);
+    transition-duration: 3s;
+  }
+}/*# sourceMappingURL=styles.css.map */
