@@ -202,6 +202,13 @@ footer{
             flex-direction: column;
             justify-content:center;
             padding: 15px;
+
+            .estadiosAntiguoYmoderno{
+                &:hover{
+                    transform: scale(1.09);
+                    transition-duration: 3s;
+                }
+            }
         }
         .itemTextosFooter{
             font-size: 25px;
@@ -232,7 +239,7 @@ footer{
         flex-direction: row;
         align-items: center;
         padding: 50px;
-        border: 10px solid black;
+        border: 2px solid black;
     }
 
     .containerTrofeos{
@@ -289,9 +296,9 @@ footer{
     .mainHistoria{
         .containerHistoria{
             display: grid;
-            grid-template-columns: 950px;
+            grid-template-columns: 1000px;
             grid-template-rows: repeat(7, 450px);
-        
+            padding: 30px;
             grid-template-areas:
             "tituloHistoria" 
             "lisandro"
@@ -314,11 +321,13 @@ footer{
                     font-size: 53px;
                     text-decoration: underline;
                 }
-                
-                .introduccionHistoria{
-                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                .textosHistoria{
                     font-size: 20px;
                 }
+                // .introduccionHistoria{
+                //     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                //     font-size: 20px;
+                // }
             }
         
             .sectionFotos{

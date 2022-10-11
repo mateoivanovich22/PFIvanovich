@@ -172,6 +172,10 @@ footer .itemRedes img {
     justify-content: center;
     padding: 15px;
   }
+  .containerEstadios .estadios .estadiosAntiguoYmoderno:hover {
+    transform: scale(1.09);
+    transition-duration: 3s;
+  }
   .containerEstadios .itemTextosFooter {
     font-size: 25px;
   }
@@ -197,7 +201,7 @@ footer .itemRedes img {
   flex-direction: row;
   align-items: center;
   padding: 50px;
-  border: 10px solid black;
+  border: 2px solid black;
 }
 .containerTrofeos .containerTrofeos p {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -238,8 +242,9 @@ footer .itemRedes img {
 }
 .contenedorGlobal .mainHistoria .containerHistoria {
   display: grid;
-  grid-template-columns: 950px;
+  grid-template-columns: 1000px;
   grid-template-rows: repeat(7, 450px);
+  padding: 30px;
   grid-template-areas: "tituloHistoria" "lisandro" "milito" "pizzuti" "lautaro" "cardenas" "mostaza";
   justify-content: center;
 }
@@ -255,8 +260,7 @@ footer .itemRedes img {
   font-size: 53px;
   text-decoration: underline;
 }
-.contenedorGlobal .mainHistoria .containerHistoria .sectionTitulo .introduccionHistoria {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+.contenedorGlobal .mainHistoria .containerHistoria .sectionTitulo .textosHistoria {
   font-size: 20px;
 }
 .contenedorGlobal .mainHistoria .containerHistoria .sectionFotos .itemLisandro {
