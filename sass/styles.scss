@@ -41,6 +41,7 @@ footer{
 
     .itemTextosFooter{
         color: white;
+        font-size: 20px;
     }
 
     .itemSponsors{
@@ -62,47 +63,93 @@ footer{
     } 
 }
 
+h1{
+    padding: 30px;
+}
+
+@media (max-width: 480px) {
+    header{
+        padding: 60px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 60px;
+
+        .itemSponsors{
+            img{
+                width: 110px;
+                padding: 20px;    
+            }
+        }
+        
+        .itemRedes{
+
+            img{
+                width: 110px;
+                padding: 20px;
+            }
+        } 
+    }
+}
+
 //HTML INDEX
-.container-fl{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.contenedorGlobal{
+    .container-fl{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-    .tituloIndex{
-        font-family: 'Anton', sans-serif;
-        margin-top: 75px;
-        font-size: 100px;
-    }
-
-    .row{
-        margin-top: 120px;
-        margin-bottom: 256px;
-
-        img{
-            width: 320px;
-            height: 320px;
+        .tituloIndex{
+            font-family: 'Anton', sans-serif;
+            margin-top: 75px;
+            font-size: 100px;
         }
 
-        .lineaCeleste{
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            
+        .row{
+            margin-top: 120px;
+            margin-bottom: 256px;
+            --bs-gutter-x: -0.5rem;
+            img{
+                width: 320px;
+                height: 320px;
+            }
+
+            .lineaCeleste{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                
+            }
+
+            .lineaCeleste:hover{
+                transform: scale(1.20);
+                transition-property: all;
+                transition-duration: 6s;
+            }
         }
 
-        .lineaCeleste:hover{
-            transform: scale(1.20);
+
+        li:hover{
+            transform: scale(1.02);
             transition-property: all;
-            transition-duration: 6s;
+            transition-duration: 5s;
+        }
+        .container-fluid{
+            .TextoIndex{
+                display: flex;
+                justify-content: center;
+                padding: 100px;
+                margin-top: -240px;
+                p{
+                    font-size: 20px;
+                }
+            }
         }
     }
 
-    li:hover{
-        transform: scale(1.02);
-        transition-property: all;
-        transition-duration: 5s;
-    }
-} 
+}
 
 @media (max-width: 480px) {
  
@@ -138,7 +185,7 @@ footer{
         }
     }
 
-}
+}   
 
 //html ESTADIO
 .containerEstadios{
@@ -154,7 +201,6 @@ footer{
         padding: 15px;
         
         h1{
-            padding: 55px;
             text-decoration: underline;
         }
     }
@@ -241,17 +287,14 @@ footer{
         padding: 50px;
         border: 2px solid black;
     }
-
-    .containerTrofeos{
-        p{
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            padding: 20px;
-        }
-        
-        h1{
-            text-decoration: underline;
-            padding: 20px;
-        }
+    p{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 20px;
+    }
+    
+    h1{
+        text-decoration: underline;
+        // padding: 30px;
     }
 
     .divImg{
@@ -324,10 +367,6 @@ footer{
                 .textosHistoria{
                     font-size: 20px;
                 }
-                // .introduccionHistoria{
-                //     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                //     font-size: 20px;
-                // }
             }
         
             .sectionFotos{
@@ -514,11 +553,12 @@ footer{
     }
 
     .preguntaSocio{
-        padding: 20px;
+        padding: 5px;
         display: flex;
         align-items: center;
         flex-direction: row;
         justify-content: center;
+        margin-top: 20px;
     }
 
     .textoSocio{
@@ -578,21 +618,16 @@ footer{
             flex-direction: column;
             justify-content: space-evenly;
             align-items: center;
+            padding: 110px;
+
+            .carnetNormal{
+                padding: 30px;
+            }
 
             img{
                 width: 300px;
                 height: 200px;
             }
-        }
-
-        .carnetNormal:hover{
-            transform: scale(1.2);
-            transition-duration: 3s;
-        }
-        
-        .carnetVitalicio:hover{
-            transform: scale(1.2);
-            transition-duration: 3s;
         }
     } 
 }

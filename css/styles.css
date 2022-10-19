@@ -34,6 +34,7 @@ footer {
 }
 footer .itemTextosFooter {
   color: white;
+  font-size: 20px;
 }
 footer .itemSponsors {
   margin-top: 25px;
@@ -50,38 +51,71 @@ footer .itemRedes img {
   padding: 5px;
 }
 
-.container-fl {
+h1 {
+  padding: 30px;
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 60px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+  }
+  footer .itemSponsors img {
+    width: 110px;
+    padding: 20px;
+  }
+  footer .itemRedes img {
+    width: 110px;
+    padding: 20px;
+  }
+}
+.contenedorGlobal .container-fl {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.container-fl .tituloIndex {
+.contenedorGlobal .container-fl .tituloIndex {
   font-family: "Anton", sans-serif;
   margin-top: 75px;
   font-size: 100px;
 }
-.container-fl .row {
+.contenedorGlobal .container-fl .row {
   margin-top: 120px;
   margin-bottom: 256px;
+  --bs-gutter-x: -0.5rem;
 }
-.container-fl .row img {
+.contenedorGlobal .container-fl .row img {
   width: 320px;
   height: 320px;
 }
-.container-fl .row .lineaCeleste {
+.contenedorGlobal .container-fl .row .lineaCeleste {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-.container-fl .row .lineaCeleste:hover {
+.contenedorGlobal .container-fl .row .lineaCeleste:hover {
   transform: scale(1.2);
   transition-property: all;
   transition-duration: 6s;
 }
-.container-fl li:hover {
+.contenedorGlobal .container-fl li:hover {
   transform: scale(1.02);
   transition-property: all;
   transition-duration: 5s;
+}
+.contenedorGlobal .container-fl .container-fluid .TextoIndex {
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+  margin-top: -240px;
+}
+.contenedorGlobal .container-fl .container-fluid .TextoIndex p {
+  font-size: 20px;
 }
 
 @media (max-width: 480px) {
@@ -131,7 +165,6 @@ footer .itemRedes img {
   padding: 15px;
 }
 .containerEstadios .tituloEstadio h1 {
-  padding: 55px;
   text-decoration: underline;
 }
 .containerEstadios .estadios {
@@ -203,13 +236,12 @@ footer .itemRedes img {
   padding: 50px;
   border: 2px solid black;
 }
-.containerTrofeos .containerTrofeos p {
+.containerTrofeos p {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 20px;
 }
-.containerTrofeos .containerTrofeos h1 {
+.containerTrofeos h1 {
   text-decoration: underline;
-  padding: 20px;
 }
 .containerTrofeos .divImg {
   padding: 15px;
@@ -409,11 +441,12 @@ footer .itemRedes img {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .mainHaceteSocio .preguntaSocio {
-  padding: 20px;
+  padding: 5px;
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: center;
+  margin-top: 20px;
 }
 .mainHaceteSocio .textoSocio {
   padding: 30px;
@@ -462,17 +495,13 @@ footer .itemRedes img {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    padding: 110px;
+  }
+  .mainHaceteSocio .imagenCarnetSocio .carnetNormal {
+    padding: 30px;
   }
   .mainHaceteSocio .imagenCarnetSocio img {
     width: 300px;
     height: 200px;
-  }
-  .mainHaceteSocio .carnetNormal:hover {
-    transform: scale(1.2);
-    transition-duration: 3s;
-  }
-  .mainHaceteSocio .carnetVitalicio:hover {
-    transform: scale(1.2);
-    transition-duration: 3s;
   }
 }/*# sourceMappingURL=styles.css.map */
