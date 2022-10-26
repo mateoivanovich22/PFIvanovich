@@ -285,7 +285,7 @@ h1{
         flex-direction: row;
         align-items: center;
         padding: 50px;
-        border: 2px solid black;
+        border: 0.5px solid black;
     }
     p{
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -294,7 +294,6 @@ h1{
     
     h1{
         text-decoration: underline;
-        // padding: 30px;
     }
 
     .divImg{
@@ -304,6 +303,14 @@ h1{
             transform: scale(1.2);
             transition-duration: 3s;
         }
+    }
+    .celeste{
+        background-color: aqua;
+    }
+
+    .anosTitulos{
+        display: flex;
+        flex-direction: column;
     }
 }
 
