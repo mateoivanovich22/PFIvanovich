@@ -311,11 +311,17 @@ h1{
     .celeste{
         background-color: aqua;
     }
-
-    .anosTitulos{
-        display: flex;
-        flex-direction: column;
+    .sectionAnosTitulos{
+        margin-right: 372px;
+        .anosTitulos{
+            display: flex;
+            flex-direction: column;
+            h2{
+                text-decoration: underline;
+            }
+        }
     }
+    
 }
 
 @media (max-width: 480px) {

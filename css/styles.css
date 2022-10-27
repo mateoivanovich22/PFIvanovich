@@ -256,9 +256,15 @@ h1 {
 .containerTrofeos .celeste {
   background-color: aqua;
 }
-.containerTrofeos .anosTitulos {
+.containerTrofeos .sectionAnosTitulos {
+  margin-right: 372px;
+}
+.containerTrofeos .sectionAnosTitulos .anosTitulos {
   display: flex;
   flex-direction: column;
+}
+.containerTrofeos .sectionAnosTitulos .anosTitulos h2 {
+  text-decoration: underline;
 }
 
 @media (max-width: 480px) {
