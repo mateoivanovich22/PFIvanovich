@@ -103,6 +103,9 @@ h1 {
   transition-property: all;
   transition-duration: 6s;
 }
+.contenedorGlobal .container-fl .bootstrapCarousel {
+  max-width: 1024px;
+}
 .contenedorGlobal .container-fl li:hover {
   transform: scale(1.02);
   transition-property: all;
