@@ -26,7 +26,7 @@ A full responsive website built using only HTML, CSS/Sass, and Bootstrap. The pr
 
 ## Demo
 
-Here is a live demo of the website: [Live Demo](demo-link)
+Here is a live demo of the website: [Live Demo]([demo-link](https://thunderous-starship-c84392.netlify.app/))
 
 ---
 
